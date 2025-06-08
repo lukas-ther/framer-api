@@ -44,7 +44,7 @@ export default async function handler(req, res) {
       headers: {
         'Authorization': authHeader,
         'Accept': 'application/json',
-        'User-Agent': 'Framer-API/1.0'
+        'User-Agent': 'curl/7.68.0'
       }
     })
 
