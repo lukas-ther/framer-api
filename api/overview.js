@@ -26,13 +26,12 @@ export default async function handler(req, res) {
       })
     }
 
-    // Call Ticket Tailor Overview API
+    // Call Ticket Tailor Overview API using Basic Auth
     const response = await fetch('https://api.tickettailor.com/v1/overview', {
       method: 'GET',
       headers: {
-        'Authorization': `Bearer ${process.env.TICKET_TAILOR_API_KEY}`,
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
+        'Authorization': `Basic ${Buffer.from(process.env.TICKET_TAILOR_API_KEY + ':').toString('base64')}`,
+        'Accept': 'application/json'
       }
     })
 
