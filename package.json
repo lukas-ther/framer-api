@@ -1,17 +1,18 @@
 {
   "name": "framer-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend API for Framer website integration with Ticket Tailor",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "vercel dev",
+    "deploy": "vercel"
   },
-  "keywords": [],
+  "keywords": ["api", "ticket-tailor", "framer", "vercel"],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^5.1.0"
+  "type": "module",
+  "dependencies": {},
+  "devDependencies": {
+    "vercel": "^33.0.0"
   }
 }
